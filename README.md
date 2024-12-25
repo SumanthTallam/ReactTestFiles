@@ -1,3 +1,5 @@
+this repo is only for the test files for the sake of interviews
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
