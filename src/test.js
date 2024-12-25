@@ -1,2 +1,2 @@
-console.log('git testing fail');
-console.log('git testing is successfull');
+console.log('updated in test file');
+
