@@ -20,10 +20,11 @@ function App() {
   return (
     <>
       <Router>
-        <Navbar />
+        {/* <Navbar /> */}
 
         <Routes>
-          <Route path={"/"} element={<Home />}/>
+          <Route path='/' element={<Navbar/>}>
+          <Route path={"/home"} element={<Home />} />
           <Route path={"/accordian"} element={<Accordian />} />
           <Route path={"/canvas"} element={<Canvas />} />
           <Route path={"/dropdown"} element={<CountryChange />} />
@@ -34,6 +35,7 @@ function App() {
           <Route path={"/carosel"} element={<Carosel />} />
           <Route path={"/registration"} element={<Signup />} />
           <Route path={"/users"} element={<FetchUsers />} />
+          </Route>
         </Routes>
       </Router>
     </>
