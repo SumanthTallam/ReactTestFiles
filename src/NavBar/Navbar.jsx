@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div>
       <div>
-        <h3>layout and outlet testing</h3>
+        {/* <h3>layout and outlet testing</h3> */}
         <Outlet/>
       </div>
 
@@ -57,6 +57,14 @@ const Navbar = () => {
                 <Link className="nav-link" to="/users">
                   FetchUsers
                 </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/typesearch">
+                  TypeSearch
+                </Link>
+              </li>
+              <li>
+                <Link className="nav-link" to='boxdelete'>BoxDelete</Link>
               </li>
             </ul>
           </div>
