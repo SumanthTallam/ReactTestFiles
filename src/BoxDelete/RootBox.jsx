@@ -1,14 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const RootBox = ({ item, handleDelete }) => {
-    const [isChecked, setIsChecked] = useState(false);
-    return (
-      <div>
-        <input type="checkbox" onChange={() => setIsChecked(!isChecked)} />
-        <span>{item}</span>
-  
-        {isChecked && <button onClick={handleDelete}>Delete</button>}
-      </div>
-    );
-  };
-  export default RootBox
+  const [isChecked, setIsChecked] = useState(false);
+  const handleCheck = () => {
+    setIsChecked(!isChecked);
+  }
+  useEffect(() => {
+    setIsChecked(false);
+  }, [item]);
+  return (
+    <div>
+      <input type="checkbox" checked={isChecked} onChange={handleCheck} />
+      <span>{item}</span>
+
+      {isChecked && <button onClick={handleDelete}>Delete</button>}
+    </div>
+  );
+};
+export default RootBox;

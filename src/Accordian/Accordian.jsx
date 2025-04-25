@@ -19,7 +19,7 @@ const ChildAccordian = ({ title, content }) => {
   return (
     <div>
       <div>
-        <h3 style={{ color: "red", cursor:'pointer'}}>
+        <h3 style={{ color: "red", cursor: "pointer" }}>
           {title}
           <span onClick={handleClick}>{open ? " - " : " + "}</span>
         </h3>

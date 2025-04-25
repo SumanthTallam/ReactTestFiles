@@ -15,9 +15,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Dropdown } from "bootstrap";
 import Navbar from "./NavBar/Navbar";
 import Home from "./Home";
-import Test from "./Example/test";
 import TypeSearch from "./TypeSearch/TypeSearch";
 import BoxDelete from "./BoxDelete/BoxDelete";
+
 
 function App() {
   return (
@@ -39,6 +39,7 @@ function App() {
             <Route path={"/users"} element={<FetchUsers />} />
             <Route path={"/typesearch"} element={<TypeSearch/>} />
             <Route path={'/boxdelete'} element = {<BoxDelete/>}/>
+    
           </Route>
         </Routes>
       </Router>

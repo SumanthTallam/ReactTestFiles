@@ -4,11 +4,6 @@ import { Link, Outlet } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <div>
-        {/* <h3>layout and outlet testing</h3> */}
-        <Outlet/>
-      </div>
-
       <nav className="navbar navbar-expand-lg bg-light navbar-light">
         <div className="container">
           <div className="">
@@ -63,8 +58,10 @@ const Navbar = () => {
                   TypeSearch
                 </Link>
               </li>
-              <li>
-                <Link className="nav-link" to='boxdelete'>BoxDelete</Link>
+              <li className="nav-item">
+                <Link className="nav-link" to="boxdelete">
+                  BoxDelete
+                </Link>
               </li>
             </ul>
           </div>
